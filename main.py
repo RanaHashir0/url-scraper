@@ -61,7 +61,7 @@ if st.button('Scrape Links'):
         else:
             st.write("No internal links found.")
 
-        # Clear input for next useee
+        # Clear input for next uses
         url_input = "" 
 
     else:
