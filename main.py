@@ -48,20 +48,20 @@ if st.button('Scrape Links'):
         # Display External Links First
         st.subheader("External Links")
         if external_links:
-            for link, domain in external_links:
-                st.write(f"Website: {domain} - Link: {link}")
+            for index, (link, domain) in enumerate(external_links, start=1):
+                st.write(f"{index}. Website: {domain} - Link: {link}")
         else:
             st.write("No external links found.")
         
         # Display Internal Links
         st.subheader("Internal Links")
         if internal_links:
-            for link, domain in internal_links:
-                st.write(f"Website: {domain} - Link: {link}")
+            for index, (link, domain) in enumerate(internal_links, start=1):
+                st.write(f"{index}. Website: {domain} - Link: {link}")
         else:
             st.write("No internal links found.")
 
-        # Clear input for next use
+        # Clear input for next useee
         url_input = "" 
 
     else:
